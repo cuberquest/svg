@@ -1,0 +1,30 @@
+html[lang="en-CA"]:lang(en-CA):root {
+  width: 100%;
+  height: 100%;
+  /* Variable section */
+  --body-dark: #111;
+  --text-dark: white;
+  --font-normal: 1em;
+  --font-sm: 0.8em;
+  --font-big: 2em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: currentColor;
+}
+
+body.dark {
+  background-color: var(--body-dark);
+  color: var(--text-dark);
+}
+
+header#header {
+  width: 100%;
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 0.3rem 0.5rem;
+}
