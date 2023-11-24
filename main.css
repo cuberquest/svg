@@ -1,6 +1,7 @@
 html[lang="en-CA"]:lang(en-CA):root {
   width: 100%;
   height: 100%;
+  font: 1rem Fredoka;
   /* Variable section */
   --body-dark: #222;
   --text-dark: white;
@@ -26,7 +27,7 @@ header#header {
   width: 100%;
   height: 3rem;
   padding: 1rem 1.5rem;
-  box-shadow: 0 0.3rem 0.5rem #000;
+  box-shadow: 0 0.25rem 0.5rem #000;
 }
 
 header#header>a[href] {
@@ -38,4 +39,5 @@ header#header>a[href] {
 img#logo[src] {
   width: 3rem;
   height: 3rem;
+  margin-right: 1.5rem;
 }
