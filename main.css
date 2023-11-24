@@ -24,14 +24,14 @@ body.dark {
 }
 
 header#header {
-  width: 100%;
+  width: calc(100% - 3rem);
   height: 3rem;
   padding: 1rem 1.5rem;
   box-shadow: 0 0.25rem 0.5rem #000;
 }
 
-header#header>a[href] {
-  display: flex;
+header#header>div[id="banner"] {
+  display: inline-flex;
   align-items: center;
   height: 100%;
 }
