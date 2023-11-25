@@ -1,11 +1,14 @@
+* {
+  box-sizing: border-box;
+  font: 1rem Fredoka;
+}
+
 html[lang="en-CA"]:lang(en-CA):root {
   width: 100%;
   height: 100%;
-  font: 1rem Fredoka;
   /* Variable section */
   --body-dark: #222;
   --text-dark: white;
-  --font-normal: 1em;
   --font-sm: 0.8em;
   --font-big: 2em;
 }
@@ -24,13 +27,13 @@ body.dark {
 }
 
 header#header {
-  width: calc(100% - 3rem);
-  height: 3rem;
+  width: 100%;
+  height: 5rem;
   padding: 1rem 1.5rem;
   box-shadow: 0 0.25rem 0.5rem #000;
 }
 
-header#header>div[id="banner"] {
+header#header>a[id="banner"][href] {
   display: inline-flex;
   align-items: center;
   height: 100%;
@@ -40,4 +43,15 @@ img#logo[src] {
   width: 3rem;
   height: 3rem;
   margin-right: 1.5rem;
+}
+
+div#page:not(:empty) {
+  width: 100%;
+}
+
+div.svg-box {
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: 4.6875rem;
+  margin: 1rem;
 }
