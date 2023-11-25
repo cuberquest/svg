@@ -49,9 +49,15 @@ div#page:not(:empty) {
   width: 100%;
 }
 
+div#suggested {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 div.svg-box {
-  width: 18.75rem;
-  height: 18.75rem;
+  min-width: 18.75rem;
+  min-height: 18.75rem;
   border-radius: 4.6875rem;
   margin: 1rem;
 }
