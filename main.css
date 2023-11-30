@@ -72,7 +72,7 @@ div.svg-box {
   border-radius: 4.6875rem;
   margin: 1rem;
   text-align: center;
-  transition: transform 1s;
+  transition: 1s;
 }
 
 body.dark div.svg-box:hover {
