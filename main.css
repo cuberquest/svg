@@ -63,7 +63,7 @@ div#page:not(:empty) {
 
 div#suggested {
   justify-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 div.svg-box {
