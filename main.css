@@ -1,7 +1,4 @@
-* {
-  box-sizing: border-box;
-  font: 1rem Fredoka;
-}
+* { box-sizing: border-box; font: 1rem Fredoka; }
 
 html[lang="en-CA"]:lang(en-CA):root {
   width: 100%;
@@ -19,7 +16,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  color: currentColor;
+  color: var(--text-light);
 }
 
 body.dark {
@@ -27,26 +24,41 @@ body.dark {
   color: var(--text-dark);
 }
 
-.flex {
-  display: flex !important;
+::-webkit-scrollbar {
+  width: 0.75rem;
+  background: #161616;
+  border-radius: 0.375rem;
 }
 
-.iflex {
-  display: inline-flex !important;
+::-webkit-scrollbar-thumb {
+  background: #0f0f0f;
+  border-radius: 0.375rem;
 }
+
+::-webkit-scrollbar-corner { background: transparent; }
+
+[hidden], .hidden { display: none !important; }
+
+.flex { display: flex !important; }
+.iflex { display: inline-flex !important; }
+
+.grid { display: grid !important; }
+.igrid { display: grid !important; }
 
 header#header {
   width: 100%;
   height: 5rem;
   padding: 1rem 1.5rem;
+  background: white;
   box-shadow: 0 0.25rem 0.5rem #555;
 }
 
 body.dark header#header {
+  background: var(--body-dark);
   box-shadow: 0 0.25rem 0.5rem #000;
 }
 
-header#header>a[id="banner"][href] {
+header#header>a#banner[href] {
   align-items: center;
   height: 100%;
 }
@@ -57,9 +69,7 @@ img#logo[src] {
   margin-right: 1.5rem;
 }
 
-div#page:not(:empty) {
-  width: 100%;
-}
+div#page { width: 100%; }
 
 div#suggested {
   justify-content: center;
@@ -75,10 +85,8 @@ div.svg-box {
   transition: 1s;
 }
 
-body.dark div.svg-box:hover {
-  transform: translate(0, -1rem);
-  background: linear-gradient(45deg, black, #000f26), #000e23;
-}
+div.svg-box:hover { transform: translate(0, -1rem); }
+body.dark div.svg-box:hover { background: linear-gradient(45deg, black, #000f26), #000e23; }
 
 a:link, a:visited {
   color: #3391ff;
@@ -86,11 +94,5 @@ a:link, a:visited {
   transition: 350ms;
 }
 
-a:hover {
-  color: #0076ff;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #0057bc;
-}
+a:hover { color: #0076ff; text-decoration: underline; }
+a:active { color: #0057bc; }
