@@ -1,1 +1,1 @@
-Array(...document.getElementsByTagName("img")).forEach(i => i.setAttribute("draggable", "false"));
+Array(...document.images).forEach(i => i.setAttribute("draggable", "false"));
