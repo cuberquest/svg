@@ -1,1 +1,1 @@
-Array(...document.images).forEach(i => i.setAttribute("draggable", "false"));
+for (const img of document.images) img.draggable = false;
