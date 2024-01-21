@@ -4,6 +4,7 @@
 html:root {
   width: 100%;
   min-height: 100%;
+  scroll-behavior: smooth;
   /* Variable section */
   --body-dark: #222;
   --body-light: #999;
