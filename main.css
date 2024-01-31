@@ -95,7 +95,7 @@ a:active { color: #0057bc; }
   padding-left: 0.3125rem;
   border: 2px solid black;
   border-radius: 0.25rem;
-  transition: border-color;
+  transition: border-color 1s;
 }
 
 #email:focus-visible { border-color: #00ff80; outline: none; }
