@@ -56,10 +56,7 @@ body.dark header#header {
   box-shadow: 0 0.25rem 0.5rem #000;
 }
 
-header#header>a#banner[href] {
-  align-items: center;
-  height: 100%;
-}
+header#header>a#banner[href] { align-items: center; height: 100%; }
 
 img#logo[src] {
   width: 3rem;
@@ -68,7 +65,6 @@ img#logo[src] {
 }
 
 div#page { width: 100%; }
-
 div#suggested { justify-content: center; flex-flow: row wrap; }
 
 div.svg-box {
@@ -91,3 +87,15 @@ body.dark div.svg-box:hover { background: linear-gradient(45deg, black, #000f26)
 a:link, a:visited { color: #3391ff; text-decoration: none; transition: 350ms; }
 a:hover { color: #0076ff; text-decoration: underline; }
 a:active { color: #0057bc; }
+
+#email {
+  background-color: #131313;
+  color: #d8d8d8;
+  width: 11.25rem;
+  padding-left: 0.3125rem;
+  border: 2px solid black;
+  border-radius: 0.25rem;
+  transition: border-color;
+}
+
+#email:focus-visible { border-color: #00ff80; outline: none; }
