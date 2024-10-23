@@ -28,5 +28,5 @@ const images = [
 ]
 
 for (let i = 0; i < 12; i++) {
-  document.getElementById("suggested").innerHTML += `<div class="svg-box"><a href><img src="${images[i].src}"><div class="desc">${images[i].desc}</div></a></div>\\`
+  document.getElementById("suggested").innerHTML += `<div class="svg-box"><a href><img src="${images[i].src}"><div class="desc">${images[i].desc}</div></a></div>\n`
 }
